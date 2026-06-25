@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Unreal Engine — generated / build output. NEVER commit these; they are
+# regenerated locally and are huge. (Source/, Content/, Config/ and the
+# .uproject ARE committed — see below.)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Build + intermediate output (regenerated on compile)
+Binaries/
+Build/
+Intermediate/
+DerivedDataCache/
+
+# Local-only editor state (autosaves, logs, per-user prefs, PIE temp)
+Saved/
+Backup/
+
+# IDE / project files — regenerated via "Generate Visual Studio project files"
+.vs/
+.idea/
+*.sln
+*.sdf
+*.opensdf
+*.suo
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+
+# Cesium for Unreal local request cache (per-machine, not shared)
+cesium-request-cache.sqlite
+cesium-request-cache.sqlite-shm
+cesium-request-cache.sqlite-wal
+
+# Misc
+UpgradeLog.htm
+*.log

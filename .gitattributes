@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Git LFS — store large binary Unreal assets outside normal git history so the
+# repo stays small and clones stay fast.
+#
+# IMPORTANT: every collaborator must run `git lfs install` ONCE on their machine
+# before cloning/pulling, or these files will download as text pointers.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Unreal binary assets + maps (binary, NOT auto-mergeable)
+*.uasset  filter=lfs diff=lfs merge=lfs -text
+*.umap    filter=lfs diff=lfs merge=lfs -text
+
+# Common binary source content imported into Content/
+*.fbx   filter=lfs diff=lfs merge=lfs -text
+*.png   filter=lfs diff=lfs merge=lfs -text
+*.jpg   filter=lfs diff=lfs merge=lfs -text
+*.jpeg  filter=lfs diff=lfs merge=lfs -text
+*.tga   filter=lfs diff=lfs merge=lfs -text
+*.bmp   filter=lfs diff=lfs merge=lfs -text
+*.psd   filter=lfs diff=lfs merge=lfs -text
+*.hdr   filter=lfs diff=lfs merge=lfs -text
+*.exr   filter=lfs diff=lfs merge=lfs -text
+*.wav   filter=lfs diff=lfs merge=lfs -text
+*.mp3   filter=lfs diff=lfs merge=lfs -text
+*.ogg   filter=lfs diff=lfs merge=lfs -text
+*.ttf   filter=lfs diff=lfs merge=lfs -text
+*.otf   filter=lfs diff=lfs merge=lfs -text
+
+# Source code stays as normal text in git (mergeable, diffable):
+#   .cs .cpp .h .java .md .ini .uproject  -> NOT listed here on purpose.

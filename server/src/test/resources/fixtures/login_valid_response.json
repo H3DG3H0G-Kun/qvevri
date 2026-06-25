@@ -1,0 +1,6 @@
+{
+  "token": "{{token}}",
+  "playerId": "{{playerId}}",
+  "displayName": "testuser",
+  "expiresInSec": 3600
+}

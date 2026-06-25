@@ -1,0 +1,14 @@
+# Maven
+target/
+
+# H2 file-backed database
+data/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

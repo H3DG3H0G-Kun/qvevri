@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "INVALID_CREDENTIALS",
+    "message": "Bad username or password"
+  }
+}

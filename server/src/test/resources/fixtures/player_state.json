@@ -1,0 +1,7 @@
+{
+  "playerId": "{{playerId}}",
+  "displayName": "testuser",
+  "position": { "x": 1.0, "y": 0.0, "z": 3.0 },
+  "rotationY": 90.0,
+  "t": 0
+}
